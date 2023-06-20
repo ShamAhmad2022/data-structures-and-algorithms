@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList= require('../classes/LinkedList');
+const LinkedList= require('../Singly-LinkedList/LinkedList');
 
 describe('successfully instantiate an empty linked list', () => { 
   it('create a linked list', ()=>{
@@ -59,7 +59,7 @@ describe('successfully instantiate an empty linked list', () => {
     ll.insertAtEnd(100);
     ll.insertAtEnd('Andrew');
     ll.insertAtEnd(true);
-    expect(ll.toString()).not.toEqual('empty array');
+    expect(ll.toString()).toEqual('{100} -> {Andrew} -> {true} -> null');
   });
 
 });
