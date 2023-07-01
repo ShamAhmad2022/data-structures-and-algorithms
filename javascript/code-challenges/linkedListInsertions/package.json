@@ -1,0 +1,15 @@
+{
+  "name": "linkedlistinsertions",
+  "version": "1.0.0",
+  "description": "Create a Linked kist with the following methods: insert, include and toSTring",
+  "main": "LinkedList.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
