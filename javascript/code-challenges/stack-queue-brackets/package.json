@@ -1,0 +1,15 @@
+{
+  "name": "stack-queue-brackets",
+  "version": "1.0.0",
+  "description": "Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue",
+  "main": "node.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.1"
+  }
+}
