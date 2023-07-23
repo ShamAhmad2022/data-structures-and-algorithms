@@ -49,6 +49,24 @@ class BinaryTree{
     return arr;
   }
 
+  findMax() {
+    if (this.root === null) return null;
+
+    let max = this.root.value;
+
+    const findMaxValue = (node) => {
+      if (node === null) return;
+
+      if (node.value > max) max = node.value;
+
+      findMaxValue(node.left);
+      findMaxValue(node.right);
+    };
+
+    findMaxValue(this.root);
+    return max;
+  }
+
 }
 
 const one = new Node(1);
@@ -75,6 +93,9 @@ console.log('--------------');
 console.log(tree.inOrder());
 console.log('--------------');
 console.log(tree.postOrder());
+console.log('--------------');
+console.log('--------------');
+console.log(tree.findMax());
 console.log('==========================');
 
 
@@ -118,7 +139,7 @@ class BinarySearchTree extends BinaryTree {
     return false;
   }
 
-  findMax() {
+  findMaxBST() {
     let currentNode = this.root;
 
     if(currentNode === null) return null;
