@@ -3,7 +3,7 @@ Write find maximum value method that finds the maximum value stored in the tree 
 
 ## Whiteboard Process
 
-![BinaryTree](./images/findMax.png)
+![BinaryTree](./images/BTFindMax.png)
 
 ## Approach & Efficiency
 
@@ -14,17 +14,24 @@ time: O(n)
 
 ## Solution
 ```js
-const tree = new BinarySearchTree();
+const one = new Node(1);
+const two = new Node(2);
+const three = new Node(3);
+const four = new Node(4);
+const five = new Node(5);
+const six = new Node(6);
 
-tree.add(1);
-tree.add(2);
-tree.add(16);
-tree.add(0);
-tree.add(23);
-tree.add(22);
-tree.add(7);
+one.left = two;
+one.right = three;
 
-console.log(tree.findMax());//23
+two.left = four;
+two.right = five;
+
+three.left = six;
+
+const tree = new BinaryTree(one);
+
+console.log(tree.findMax());
 
 
 ```
