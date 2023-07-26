@@ -1,0 +1,15 @@
+{
+  "name": "tree-breadth-first",
+  "version": "1.0.0",
+  "description": "Write find maximum value method that finds the maximum value stored in the tree and takes zero Arguments and returns the max number",
+  "main": "BinaryTree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.1"
+  }
+}
