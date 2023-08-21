@@ -77,6 +77,19 @@ class BinaryTree{
     traversal(this.root);
   }
 
+  oddNumbersSum() {
+    let sum=0;
+
+    const traversal = (node) => {
+      if(node.value%2!== 0) sum+=node.value;
+      if (node.left) traversal(node.left);
+      if (node.right) traversal(node.right);
+    };
+
+    traversal(this.root);
+    return sum;
+  }
+
 }
 
 
@@ -125,31 +138,31 @@ function fizzBuzzTree(tree) {
 }
 
 
-const two = new Node(2);
-const seven = new Node(7);
-const five = new Node(5);
-const two2 = new Node(2);
+const eight = new Node(8);
+const three = new Node(3);
+const ten = new Node(10);
+const one = new Node(1);
 const six = new Node(6);
-const nine = new Node(9);
-const five2 = new Node(5);
-const eleven = new Node(11);
-const fifteen = new Node(15);
+const fourteen = new Node(14);
+const four = new Node(4);
+const seven = new Node(7);
+const thirteen = new Node(13);
 
-two.left = seven;
-two.right = five;
+eight.left = three;
+eight.right = ten;
 
-seven.left = two2;
-seven.right = six;
+three.left = one;
+three.right = six;
 
-five.right = nine;
+ten.right = fourteen;
 
-six.left = five2;
-six.right = eleven;
+six.left = four;
+six.right = seven;
 
-nine.left = fifteen;
+fourteen.left = thirteen;
 
 
-const tree = new BinaryTree(two);
+const tree = new BinaryTree(eight);
 
 console.log(tree);
 // console.log('--------------');
@@ -166,8 +179,9 @@ console.log('--------------');
 console.log(fizzBuzzTree(tree));
 console.log('--------------');
 tree.printTree();
-console.log('--------------');
-fizzBuzzTree(tree).printTree();
+tree.oddNumbersSum();
+// console.log('--------------');
+// fizzBuzzTree(tree).printTree();
 console.log('==========================');
 
 //Binary Search Tree
