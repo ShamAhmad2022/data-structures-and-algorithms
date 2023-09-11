@@ -1,0 +1,15 @@
+{
+  "name": "hashmap-left-join",
+  "version": "1.0.0",
+  "description": "Implement a Hashtable Class with the following methods: set, get, has, keys and hash.",
+  "main": "HashMap.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.4"
+  }
+}
