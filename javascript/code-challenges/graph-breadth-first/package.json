@@ -1,0 +1,15 @@
+{
+  "name": "graph-breadth-first",
+  "version": "1.0.0",
+  "description": "Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods: add vertex, add edge, get vertices, get neighbors, size.",
+  "main": "Edge.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
