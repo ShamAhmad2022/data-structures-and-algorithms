@@ -1,0 +1,15 @@
+{
+  "name": "graph-depth-first",
+  "version": "1.0.0",
+  "description": "Write a function called business trip that takes arguments: graph, array of city names, then return the cost of the trip (if it’s possible) or null (if not).",
+  "main": "Edge.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
